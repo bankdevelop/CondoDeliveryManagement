@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div>
+        <div class="divhead">
+            <h1>Index</h1>
+        </div>
+        <div class="divbody">
+            <ul>
+                <li><a href="#user">วิธีการใช้งานของผู้ใช้งานทั่วไป</a></li>
+                <li><a href="#staff">วิธีการใช้งานของเจ้าหน้าที่ส่วนกลาง</a></li>
+                <li><a href="#admin">วิธีการใช้งานของผู้ดูแลระบบ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="user">
+        <div class="divhead">
+            <h1>วิธีการใช้งานของผู้ใช้งานทั่วไป</h1>
+        </div>
+        <div class="divbody">
+            <p id="registerUser">
+                <h2>วีธีการสมัครสมาชิก</h2>
+                <p>
+                    &emsp;คลิกปุ่ม "สมัครบัญชีผู้อยู่อาศัย" ทางด้านซ้ายล่างของโปรแกรม (ที่มีกรอบสีแดงครอบอยู่)
+                </p>
+                <p style="text-align:center;">
+                    <img src="./img/register1.png" style="width:80%;">
+                </p>
+                <p>
+                    &emsp;การสมัครสมาชิกในโปรแกรมเพื่อทำการดูรายการจดหมาย เอกสาร หรือ พัสดุที่ส่งมายังผู้เช่านั้นต้องทำการกรอกข้อมูลให้ตรงกับข้อมูลที่ได้ลงทะเบียนไว้กับพนักงานก่อนหน้านี้ คือ <span style="color:red;"> ชื่อ และ เบอร์โทรศัพท์ </span> ถ้าหากชื่อและโทรศัพท์ไม่ตรงจะไม่สามารถสมัครบัญชีผู้ใช้ได้
+                </p>
+                <p style="text-align:center;">
+                    <img src="./img/register.png" style="width:80%;">
+                </p>
+                <p style="text-align:center;">
+                    <img src="./img/register_fill.png" style="width:80%;">
+                </p>
+                <p>
+                    &emsp;หากสร้างบัญชีสำเร็จจะขึ้นตัวอักษรสีเขียวว่า "สร้างบัญชีเสร็จสิ้น" หากไม่ขึ้นตามนี้ แต่ขึ้นสีแดงให้ทำตามคำแนะนำตามตัวอักษรสีแดงที่ขึ้นเตือน
+                </p>
+                <p style="text-align:center;">
+                    <img src="./img/register_suceed.png" style="width:80%;">
+                </p>
+            </p>
+            <hr/>
+                <p id="receive">
+                <h2>การดูและการรับจดหมาย/เอกสาร/พัสดุ</h2>
+                <p>
+                    &emsp;ขั้นตอนแรกให้ Login เข้าสู่ระบบก่อน
+                </p>
+                <p style="text-align:center;">
+                    <img src="./img/login.png" style="width:80%;">
+                </p>
+                <p>
+                    &emsp;กดปุ่ม "ดูข้อมูล" เพื่อดูรายละเอียดของจดหมาย/เอกสาร/พัสดุ ที่มาส่งในห้องที่ได้ทำการเช่าห้องไว้ และกดปุ่ม "รับของ" เป็นการ<span style="color:red; font-weight:bold;">ลบ</span>จดหมาย/เอกสาร/พัสดุออกจากรายการโดยจะถูกบันทึกไว้ในหน้าของเจ้าหน้าที่ส่วนกลาง <span style="color:red; font-weight:bold;">ถ้าหากไม่พบข้อมูลใดๆเลย แสดงว่าไม่มีจดหมาย/เอกสาร/พัสดุ ส่งมาถึงคุณ</span>
+                </p>
+                <p style="text-align:center;">
+                    <img src="./img/user.png" style="width:80%;">
+                </p>
+            </p>
+        </div>
+    </div>
+
+    <div id="staff">
+        <div class="divhead">
+            <h1>วิธีการใช้งานของเจ้าหน้าที่ส่วนกลาง</h1>
+        </div>
+        <div class="divbody">
+            <p id="createAccount">
+                <h2>การสร้างบัญชี</h2>
+                <p>
+                    &emsp;เจ้าหน้าที่ส่วนกลางไม่สามารถสร้างบัญชีของตัวเองได้<span style="color:red;"> ต้องให้ผู้ดูแลระบบเป็นผู้สร้างเท่านั้น </span>
+                </p>
+            </p>
+
+            <hr/>
+            <p id="workspace">
+                <h2>Work Space</h2>
+                <p style="text-align:center;">
+                    <img src="./img/staff.png" style="width:80%;">
+                </p>
+                <p>
+                    <ul>
+                        <li><span style="font-weight:bold;">หมายเลข 1</span> : คือเมนูสำหรับออกจากระบบ, เปลี่ยนรหัสผ่านของบัญชี, และหน้าจัดการเพิ่ม/ลบ จดหมาย/เอกสาร/พัสดุ</li>
+                        <li><span style="font-weight:bold;">หมายเลข 2</span> : คือผังแสดงห้องทั้งหมดที่มีอยู่ในระบบ โดยแต่ละห้องจะถูกอ้างอิงด้วยหมายเลขห้อง</li>
+                        <li><span style="font-weight:bold;">หมายเลข 3</span> : คือกระดานแสดงรายละเอียดโดยสังเขปของห้อง ซึ่งตอนแรกจะไม่มีข้อมูลใดๆ ข้อมูลกระปรากฏเมื่อคลิกห้องทางฝั่ง หมายเลข 2</li>
+                        <li><span style="font-weight:bold;">หมายเลข 4</span> : คือส่วนแบบฟอร์มสำหรับเพิ่มห้องพักโดยกรอกหมายเลขตึก, ชั้นและลำดับห้องแทนหมายเลขห้อง เลือกประเภทห้องโดยห้อง Standard จะรองรับคนได้สูงสุด 2 คนในขณะที่ Suite จะรับคนได้สูงสุด 4 คน</li>
+                    </ul>
+                </p>
+                <p style="text-align:center;">
+                    <img src="./img/room_info.png" style="width:60%;">
+                </p>
+                <p>
+                    1. คือปุ่ม "จัดการผู้เช่า" ใช้สำหรับเข้าไปเพิ่ม/ลบผู้เช่ารายบุคคล<br/>
+                    2. คือปุ่ม "เคลียร์ผู้เช่า" ใช้สำหรับลบผู้เช่าทั้งหมดในห้องออก
+                </p>
+            </p>
+
+            <hr/>
+            <p id="createRenter">
+                <h2>การสร้างผู้เช่ารายใหม่</h2>
+                <p>
+                    <ul>
+                        <li>ขั้นตอนแรก ต้องเลือกห้องที่ต้องการเพิ่มผู้เช่าโดยเลือกคลิกปุ่มทางด้านขวาของโปรแกรม ใต้คำว่า "แผนผังห้องพัก"</li>
+                    </ul>
+                    <p style="text-align:center;">
+                        <img src="./img/staff_highlight_rooms.png" style="width:80%;">
+                    </p>
+                    <ul>
+                         <li>กรณีที่ 1 ห้องที่จะเพิ่ม ตอนนี้อยู่ในสถานะว่าง(คนเช่า 0 คน) ให่คลิกที่ปุ่มสีเขียว "เพิ่มคนเช่า"</li>
+                    </ul>
+                    <p style="text-align:center;">
+                        <img src="./img/addNewRenter.png" style="width:80%;">
+                    </p>
+                    <ul>
+                        <li>กรณีที่ 2 ห้องไม่ได้อยู่ในสถานะว่าง(มีผู้เช่าอย่างน้อย 1 คน) ให่คลิกที่ปุ่มสีเหลือง "จัดการผู้เช่า"</li>
+                    </ul>
+                    <p style="text-align:center;">
+                        <img src="./img/staff_highlight_button.png" style="width:80%;">
+                    </p>
+                    <ul>
+                        <li>ขั้นตอนต่อไปคือการเพิ่มผู้เช่า สามารถเพิ่มได้จากโซนด้านล่างดังรูป</li>
+                    </ul>
+                    <p style="text-align:center;">
+                        <img src="./img/renter_page.png" style="width:80%;">
+                    </p>
+                    <p style="text-align:center;">
+                        <img src="./img/renter_page2.png" style="width:80%;">
+                    </p>
+                    <ul>
+                        <li>ถ้าหากกรอกข้อมูลเรียบร้อยแล้วโปรแกรมจะทำการรีเฟรชหน้าเพื่อนำข้อมูลใหม่มาแสดง</li>
+                        <li><span style="color:red;">ข้อสำคัญคือ ห้อง Standard จะรับสมาชิกได้เพียง 2 คนเท่านั้นในขณะที่ห้อง Suite รับคนได้สูงสุด 4 คน</span></li>
+                    </ul>
+                    <p style="text-align:center;">
+                        <img src="./img/renter_page3.png" style="width:80%;">
+                    </p>
+                    <p style="text-align:center;">
+                        <img src="./img/renter_page4.png" style="width:80%;">
+                    </p>
+                    <ul>
+                        <li>กลับหน้าเดิมให้คลิกที่ปุ่ม "จัดการห้องพัก"</li>
+                    </ul>
+                    <p style="text-align:center;">
+                        <img src="./img/renter_page5.png" style="width:80%;">
+                    </p>
+                </p>
+            </p>
+
+            <hr/>
+            <p id="delivery">
+                <h2>หน้าจัดการจดหมาย/เอกสาร/พัสดุ</h2>
+                <p>1. คลิกเมนู "จัดการจดหมาย/เอกสาร/พัสดุ" ตรงปุมมุมบนซ้าย</p>
+                <p style="text-align:center;">
+                    <img src="./img/delivery_menu.png" style="width:80%;">
+                </p>
+                <p>
+                    2. คลิกเมนู (1)"จัดการจดหมาย" , (2)"จัดการเอกสาร" , (3)"จัดการพัสดุ" เพื่อเข้าไปเพิ่มและลบจดหมาย/เอกสาร/พัสดุต่างๆรายชิ้น // คลิกเมนู (4) เมื่อต้องการค้นหาจดหมาย/เอกสาร/พัสดุผ่านหมายเลขห้อง
+                </p>
+                <p style="text-align:center;">
+                    <img src="./img/delivery.png" style="width:80%;">
+                </p>
+                <p>
+                    3. ในแต่หน้าของเมนู (1)"จัดการจดหมาย" , (2)"จัดการเอกสาร" , (3)"จัดการพัสดุ" จะถูกแบ่งเป็น 2 ส่วนหลักๆ คือส่วนที่แสดงข้อมูลที่มีอยู่ในปัจจุบันจะแสดงอยู่ในรูปแบบตาราง ส่วนที่ 2 ที่เป็นกรอบสีแดงคือส่วนที่ใช้เพิ่มจดหมาย/เอกสาร/พัสดุ
+                </p>
+                <p style="text-align:center;">
+                    <img src="./img/letter.png" style="width:80%;">
+                    <img src="./img/document.png" style="width:80%;">
+                    <img src="./img/supplies.png" style="width:80%;">
+                </p>
+                <p>
+                    4. ในกรณีที่กดเมนู (4)"ค้นหาของตามหมายเลขห้อง" โดยในหน้านี้จะสามารถค้นหา จดหมาย/เอกสาร/พัสดุ ที่เคยรับมาแล้วได้ผ่านทางกรอกหมายเลขห้อง
+                </p>
+                <p style="text-align:center;">
+                    <img src="./img/search.png" style="width:80%;">
+                </p>
+            </p>
+        </div>
+    </div>
+
+    <div id="admin">
+        <div class="divhead">
+            <h1>วิธีการใช้งานของผู้ดูแลระบบ</h1>
+        </div>
+        <div class="divbody">
+            <p id="WorkSpaceAdmin">
+                <h2>เข้าสู่ระบบ</h2>
+                <p>
+                    &emsp;ขั้นตอนแรกให้ Login เข้าสู่ระบบก่อน
+                </p>
+                <p style="text-align:center;">
+                    <img src="./img/loginadmin.png" style="width:80%;">
+                </p>
+
+                <hr>
+                <h2>Work Space</h2>
+                <p style="text-align:center;">
+                    <img src="./img/admin.png" style="width:80%;">
+                </p>
+                <p>
+                    <ul>
+                        <li><span style="font-weight:bold;">หมายเลข 1</span> : คือปุ่มเมนูนำทางไปยังหน้าสร้างบัญชีผู้ใช้ของเจ้าหน้าที่ส่วนกลาง</li>
+                        <li><span style="font-weight:bold;">หมายเลข 2</span> : คือตารางแสดงรายชื่อเจ้าหน้าส่วนกลางทั้งหมด 5 ลำดับที่เข้าใช้ระบบล่าสุดถ้าเป็น null แปลว่ายังไม่เคยมีการเข้าระบบ</li>
+                        <li><span style="font-weight:bold;">หมายเลข 3</span> : คือแบบฟอร์มสำหรับเปลี่ยนรหัสผ่านแบบสั้นของผู้ดูแลระบบที่สามารถเปลี่ยนรหัสได้ทันที</li>
+                    </ul>
+                </p>
+                <p>โดยถ้าหากเลือกกดหมายเลข 1 จะเข้าไปหน้าสร้างบัญชี</p>
+                <p style="text-align:center;">
+                    <img src="./img/staffuser.png" style="width:80%;">
+                </p>
+                <p style="text-align:center;">
+                    <img src="./img/createstaffuser.png" style="width:80%;">
+                </p>
+                <p>ถ้าหากสร้างสำเร็จจะขึ้นข้อความสีเขียว "สร้างบัญชีเสร็จสิ้น" หากขึ้นสีแดงให้ทำตามคำแนะนำของตัวอักษรสีแดง</p>
+                <p style="text-align:center;">
+                    <img src="./img/createstaffuser_succed.png" style="width:80%;">
+                </p>
+            </p>
+
+            <hr/>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="delivery.management.controller.staff.StaffAddRenterController">
+   <children>
+      <Label layoutX="297.0" layoutY="41.0" text="เจ้าหน้าที่ส่วนกลาง">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="roomButton" layoutX="280.0" layoutY="97.0" mnemonicParsing="false" onAction="#handleRoomButton" text="จัดการห้องพัก" />
+      <Button fx:id="deliveryButton" layoutX="370.0" layoutY="97.0" mnemonicParsing="false" onAction="#handleDeliveryButton" text="จัดการจดหมาย/เอกสาร/พัสดุ" />
+      <Label layoutX="325.0" layoutY="146.0" text="ห้อง">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label fx:id="roomNumberLabel" layoutX="400.0" layoutY="148.0" text="000">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addNewName" layoutX="155.0" layoutY="506.0" />
+      <TextField fx:id="addNewTel" layoutX="443.0" layoutY="506.0" />
+      <Button fx:id="addNewButton" layoutX="603.0" layoutY="506.0" mnemonicParsing="false" onAction="#handleAddNewButton" text="เพิ่มรายชือ" />
+      <Label layoutX="133.0" layoutY="510.0" text="ชื่อ" />
+      <Label layoutX="354.0" layoutY="510.0" text="หมายเลขโทรศัพท์" />
+      <TableView fx:id="renterTableView" layoutX="155.0" layoutY="207.0" prefHeight="268.0" prefWidth="498.0">
+        <columns>
+          <TableColumn fx:id="renterName" prefWidth="226.0" text="ชื่อ" />
+          <TableColumn fx:id="telNumber" prefWidth="196.0" text="หมายเลขโทรศัพทฺ์" />
+            <TableColumn fx:id="colControl" minWidth="0.0" prefWidth="75.0" />
+        </columns>
+      </TableView>
+      <Label fx:id="errorLabel" layoutX="399.0" layoutY="549.0" textFill="#f50000" />
+      <Label fx:id="succedLabel" layoutX="390.0" layoutY="549.0" textFill="#00ab50" />
+   </children>
+</AnchorPane>

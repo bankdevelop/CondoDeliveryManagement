@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="delivery.management.controller.SampleController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="468.0" prefWidth="658.0">
+         <children>
+            <Label layoutX="215.0" layoutY="65.0" text="CondoDelivery">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="215.0" layoutY="146.0" text="Username">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="215.0" layoutY="179.0" text="Password">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameField" layoutX="293.0" layoutY="146.0" />
+            <PasswordField fx:id="passwordField" layoutX="293.0" layoutY="179.0" />
+            <Button fx:id="loginButton" layoutX="394.0" layoutY="222.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" text="Login" />
+            <Button fx:id="instructionButton" layoutX="32.0" layoutY="414.0" mnemonicParsing="false" onAction="#handleInstructionButtonAction" text="วิธีการใช้" />
+            <Button fx:id="creditButton" layoutX="584.0" layoutY="414.0" mnemonicParsing="false" onAction="#handleCreditButtonAction" text="ผู้จัดทำ" />
+            <Button fx:id="registerButton" layoutX="105.0" layoutY="414.0" mnemonicParsing="false" onAction="#handleRegisterButtonAction" text="สมัครบัญชีผู้อยู่อาศัย" />
+            <Label fx:id="errorLabel" layoutX="279.0" layoutY="268.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

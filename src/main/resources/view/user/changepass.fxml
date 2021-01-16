@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="delivery.management.controller.user.UserChangePassController">
+   <children>
+      <Label layoutX="292.0" layoutY="96.0" text="เปลี่ยนรหัสผ่าน">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="changePassButton" layoutX="477.0" layoutY="288.0" mnemonicParsing="false" onAction="#handleChangePassButton" text="เปลี่ยนรหัสผ่านใหม่" />
+      <PasswordField fx:id="newPassField" layoutX="314.0" layoutY="193.0" />
+      <Label layoutX="221.0" layoutY="197.0" text="รหัสผ่านใหม่" />
+      <Label fx:id="errorLabel" layoutX="281.0" layoutY="326.0" textFill="RED" />
+      <Label fx:id="sucessLabel" layoutX="281.0" layoutY="326.0" textFill="#059a23" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBackButton" text="กลับหน้าหลัก" />
+      <PasswordField fx:id="againNewPassField" layoutX="314.0" layoutY="242.0" />
+      <Label layoutX="221.0" layoutY="246.0" text="ยืนยันรหัสผ่านใหม่" />
+   </children>
+</AnchorPane>

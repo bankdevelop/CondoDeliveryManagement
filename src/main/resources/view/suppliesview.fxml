@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="delivery.management.controller.SuppliesViewController">
+   <children>
+      <Label layoutX="375.0" layoutY="71.0" text="พัสดุ">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="36.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleBackButton" text="กลับหน้าจัดการพัสดุ" />
+      <Label fx:id="errorLabel" layoutX="317.0" layoutY="560.0" textFill="RED" />
+      <Label layoutX="163.0" layoutY="143.0" text="ห้อง : " />
+      <Label layoutX="161.0" layoutY="276.0" text="ผู้รับ :" />
+      <Label layoutX="130.0" layoutY="171.0" text="วันเวลาที่รับ : " />
+      <Label layoutX="155.0" layoutY="198.0" text="ขนาด : " />
+      <Label layoutX="93.0" layoutY="250.0" text="TrackingNumber :" />
+      <Label layoutX="113.0" layoutY="224.0" text="ชื่อบริการขนส่ง : " />
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="325.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/320x320.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="roomLabel" layoutX="199.0" layoutY="143.0" text="Label" />
+      <Label fx:id="dateLabel" layoutX="199.0" layoutY="171.0" text="Label" />
+      <Label fx:id="sizeLabel" layoutX="199.0" layoutY="198.0" text="Label" />
+      <Label fx:id="serviceLabel" layoutX="199.0" layoutY="224.0" text="Label" />
+      <Label fx:id="trackLabel" layoutX="199.0" layoutY="250.0" text="Label" />
+      <Label fx:id="receiverLabel" layoutX="199.0" layoutY="276.0" text="Label" />
+      <Label layoutX="113.0" layoutY="302.0" text="รายละเอียดผู้ส่ง :" />
+      <Label fx:id="desLabel" layoutX="199.0" layoutY="302.0" text="Label" />
+   </children>
+</AnchorPane>

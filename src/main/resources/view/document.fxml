@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="delivery.management.controller.DocumentController">
+   <children>
+      <Label layoutX="303.0" layoutY="71.0" text="หน้าจัดการเอกสาร">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="36.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleBackButton" text="กลับหน้าหลัก" />
+      <TableView fx:id="tableView" layoutX="74.0" layoutY="129.0" prefHeight="195.0" prefWidth="653.0">
+        <columns>
+          <TableColumn fx:id="colRoomNum" prefWidth="91.0" text="หมายเลขห้อง" />
+          <TableColumn fx:id="colSender" minWidth="7.0" prefWidth="203.0" text="รายละเอียดผู้ส่ง" />
+            <TableColumn fx:id="colSize" minWidth="7.0" prefWidth="59.0" text="ขนาด" />
+            <TableColumn fx:id="colDatetime" minWidth="7.0" prefWidth="176.0" text="วันเวลาที่ได้รับ" />
+            <TableColumn fx:id="colView" minWidth="7.0" prefWidth="59.0" />
+            <TableColumn fx:id="colReceive" minWidth="7.0" prefWidth="59.0" />
+        </columns>
+      </TableView>
+      <Button fx:id="addNewLetterButton" layoutX="654.0" layoutY="526.0" mnemonicParsing="false" onAction="#handleAddNewLetterButton" text="เพิ่มเอกสาร" />
+      <Button fx:id="imageButton" layoutX="74.0" layoutY="501.0" mnemonicParsing="false" onAction="#handleImageButton" text="เลือกรูปภาพ" />
+      <Label fx:id="imageLabel" layoutX="155.0" layoutY="505.0" text="ยังไม่ได้เลือก" />
+      <Label layoutX="75.0" layoutY="474.0" text="เลือกขนาดเอกสาร" />
+      <CheckBox fx:id="size1" layoutX="183.0" layoutY="473.0" mnemonicParsing="false" onAction="#handleSize1CheckBox" selected="true" text="A4" />
+      <CheckBox fx:id="size2" layoutX="265.0" layoutY="473.0" mnemonicParsing="false" onAction="#handleSize2CheckBox" text="A3" />
+      <CheckBox fx:id="size3" layoutX="349.0" layoutY="473.0" mnemonicParsing="false" onAction="#handleSize3CheckBox" text="A2" />
+      <TextField fx:id="roomNumField" layoutX="144.0" layoutY="337.0" />
+      <Label layoutX="73.0" layoutY="341.0" text="หมายเลขห้อง" />
+      <Label layoutX="73.0" layoutY="372.0" text="ข้อมูลผู้ส่ง" />
+      <Label fx:id="errorLabel" layoutX="317.0" layoutY="560.0" textFill="RED" />
+      <TextArea fx:id="senderInfoField" layoutX="144.0" layoutY="372.0" prefHeight="84.0" prefWidth="200.0" />
+      <Label layoutX="445.0" layoutY="472.0" text="ความสำคัญ" />
+      <CheckBox fx:id="priority1" layoutX="525.0" layoutY="472.0" mnemonicParsing="false" onAction="#handlePriority1CheckBox" selected="true" text="ปกติ" />
+      <CheckBox fx:id="priority2" layoutX="585.0" layoutY="471.0" mnemonicParsing="false" onAction="#handlePriority2CheckBox" text="ด่วน" />
+      <CheckBox fx:id="priority3" layoutX="640.0" layoutY="471.0" mnemonicParsing="false" onAction="#handlePriority3CheckBox" text="ด่วนที่สุด" />
+   </children>
+</AnchorPane>
